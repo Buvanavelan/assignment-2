@@ -1,0 +1,25 @@
+CREATE TABLE assignment.student
+(
+id int PRIMARY KEY auto_increment,
+name varchar(50),
+age int,
+gender varchar(10)
+);
+
+Select * from assignment.student;
+
+use assignment;
+
+Insert into student(name,age,gender) 
+Values('velu',19,'male');
+Insert into student(name,age,gender)
+Values('fazil',20,'male');
+Insert into student(name,age,gender) 
+Values('sru',19,'female');
+
+Update student
+Set name= 'janet'
+Where id=2;
+
+Delete from student
+Where id=3;
